@@ -12,6 +12,13 @@ Dependency
     <artifactId>dropwizard-aws</artifactId>
     <version>0.0.3</version>
 </dependency>
+
+<repositories>
+    <repository>
+        <id>bintray</id>
+        <url>https://dl.bintray.com/burakdd/maven/</url>
+    </repository>
+</repositories>
 ```
 
 Usage
