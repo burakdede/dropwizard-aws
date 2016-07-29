@@ -6,7 +6,7 @@ import org.glassfish.hk2.api.Factory;
 /**
  * Created by burakdede on 29/07/16.
  */
-public class SQSClientFactory implements Factory<Object> {
+public class SQSClientFactory implements Factory<AmazonSQSClient> {
 
     private final AmazonSQSClient sqs;
 
@@ -15,12 +15,12 @@ public class SQSClientFactory implements Factory<Object> {
     }
 
     @Override
-    public Object provide() {
+    public AmazonSQSClient provide() {
         return sqs;
     }
 
     @Override
-    public void dispose(Object o) {
+    public void dispose(AmazonSQSClient o) {
 
     }
 }
